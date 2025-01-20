@@ -38,26 +38,28 @@
   <!-- /END Hero Section -->
 
   <!-- **** Contact Section **** -->
+   <!-- TODO use emailjs for sending email -->
   <section id="contact">
     <div class="container">
       <div class="contact-form-container">
         <div class="row about-wrapper justify-content-center">
           <div class="col-md-8 col-sm-12">
             <div class="about-wrapper__info load-hidden">
-              <form class="about-wrapper__info-text">
+              <form class="about-wrapper__info-text" action="mailto:kjamil2004@gmail.com" method="post"
+                enctype="text/plain">
                 <div class="name-group">
                   <div class="form-group mb-3">
-                    <input type="text" class="form-control" placeholder="First Name" required>
+                    <input type="text" name="First Name" class="form-control" placeholder="First Name" required>
                   </div>
                   <div class="form-group mb-3">
-                    <input type="text" class="form-control" placeholder="Last Name" required>
+                    <input type="text" name="Last Name" class="form-control" placeholder="Last Name" required>
                   </div>
                 </div>
                 <div class="form-group mb-3">
-                  <input type="email" class="form-control" placeholder="Email" required>
+                  <input type="email" name="Email" class="form-control" placeholder="Email" required>
                 </div>
                 <div class="form-group mb-3">
-                  <textarea class="form-control" rows="8" placeholder="Message" required></textarea>
+                  <textarea name="Message" class="form-control" rows="8" placeholder="Message" required></textarea>
                 </div>
                 <span class="d-flex mt-3">
                   <button type="submit" class="cta-btn cta-btn--resume">
